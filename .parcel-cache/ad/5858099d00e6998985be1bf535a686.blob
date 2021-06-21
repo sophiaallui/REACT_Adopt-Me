@@ -1,0 +1,49 @@
+// Another component:
+const Pet = ({ name, animal, breed }) => {
+  return React.createElement("div", {}, [
+    React.createElement("h1", {}, name),
+    React.createElement("h2", {}, animal),
+    React.createElement("h2", {}, breed),
+  ]);
+};
+const x = g;
+// code goes here. not a nice thing to do
+// Component called App
+const App = () => {
+  //what kind of element it is
+  return React.createElement(
+    // what kinda of tag
+    "div",
+    { id: "something-important" }, // empty object could be an id so
+    // child element { id: "something-importatnt"} would name the div
+
+    [
+      // the children to pass into, h1 -> adopt me would be filled in
+      React.createElement("h1", {}, "Adpot Me!"), // attributes
+
+      React.createElement(Pet, {
+        name: "sdadasdkjaldalkdjaldjla",
+        animal: "Dog",
+        breed: "mixed lab",
+      }),
+      React.createElement(Pet, {
+        name: "Miso",
+        animal: "Dog",
+        breed: "white common tiny dog",
+      }),
+      React.createElement(Pet, {
+        name: "Luna",
+        animal: "Dog",
+        breed: "Havanese",
+      }),
+    ]
+  );
+};
+
+// Render to the DOM
+ReactDOM.render(
+  // The holder: composite component
+  React.createElement(App),
+  // What to put inside of the root
+  document.getElementById("root")
+);

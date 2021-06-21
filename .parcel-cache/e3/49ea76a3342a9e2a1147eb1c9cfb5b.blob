@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Me!</title>
+    <link rel="stylesheet" href="6fd9c25ada84e0f080f958361119d36b">
+  </head>
+  <body>
+    <div id="root">not rendered</div>
+    <script src="3b3047c928a04add7cc718ab61a3c5f6"></script>
+    <script src="868b4bb75e2bf117d671a1ee59dd5df5"></script>
+
+    <script src="7f883e4d47eea1f1e75b8e9b9defa655"></script>
+  </body>
+</html>

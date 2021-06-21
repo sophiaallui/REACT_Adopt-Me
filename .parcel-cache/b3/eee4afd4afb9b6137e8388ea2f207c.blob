@@ -1,0 +1,81 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require('react');
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require('react-dom');
+  require('./Pet');
+  var _SearchParams = require('./SearchParams');
+  var _SearchParamsDefault = _parcelHelpers.interopDefault(_SearchParams);
+  var _jsxFileName = "/Users/sophia.lui/Documents/adopt_me/src/App.js";
+  const App = () => {
+    /*return React.createElement("div", {}, [
+    React.createElement("h1", {}, "Adopt Me!"),
+    React.createElement(Pet, {
+    name: "Luna",
+    animal: "Dog",
+    breed: "Havanese"
+    }),
+    React.createElement(Pet, {
+    name: "Pepper",
+    animal: "Bird",
+    breed: "Cockatiel"
+    }),
+    React.createElement(Pet, { name: "Doink", animal: "Cat", breed: "Mix" })
+    ]);
+    */
+    /*return (
+    <div>
+    <h1 id="something-important">Adopt Me!</h1>
+    <Pet name="Luna" animal="Dog" breed="Havanese"/>
+    <Pet name="Doink" animal="cat" breed="mixed"/>
+    <Pet name="Pepper" animal="Bird" breed="Cockatiel"/>
+    
+    </div>
+    )
+    */
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 8
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        id: "something-important",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 12
+        }
+      }, "Adopt Me!"), /*#__PURE__*/_reactDefault.default.createElement(_SearchParamsDefault.default, {
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 12
+        }
+      }))
+    );
+  };
+  _c = App;
+  _reactDom.render(/*#__PURE__*/_reactDefault.default.createElement(App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 8
+    }
+  }), document.getElementById("root"));
+  var _c;
+  $RefreshReg$(_c, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
