@@ -32,4 +32,14 @@ Project is from Frontend Masters: Completed Intro to React, v5. The goal of taki
 
     ErrorBoundary was called inside of Details.js to catch the errors from the different components, specifically when the class is exported. If ErrorBoundary was called inside of the Details class component, the error can probably be caught up until the carousel, and not the rest since there are many nested parts within details due to it not being under its child component tree. In order to catch the errors from the overall class, ErrorBoundary is called when the class is exported so that it can be applied to all of Details.
 
-2.  State:
+2.  Unary plus `+`:
+
+    I briefly learned about unary operations from one of my course, and it was cool to see it used in practice. In this project, it was used to convert the string value of the index that was collected from the API source into an actual digit so it can be used to find the index on my end.
+
+    ```
+    handleIndexClick = event => {
+        this.setState({
+            active: +event.target.dataset.index
+        });
+    };
+    ```
