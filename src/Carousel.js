@@ -15,15 +15,6 @@ class Carousel extends React.Component{
 
         return {photos}; 
     }
-    // wrong: dom API
-    // what is "this", what is it referencing: it is not correct/undefined
-
-    /*handleIndexClick(event){ 
-        this.setState({
-            active: event.target.dataset.index
-        })
-    }
-    */ 
 
     handleIndexClick = event => { 
         this.setState({ 

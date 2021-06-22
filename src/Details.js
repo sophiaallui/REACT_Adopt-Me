@@ -3,12 +3,7 @@ import pet from '@frontendmasters/pet'
 import Carousel from './Carousel'; 
 
 class Details extends React.Component { 
-   /* constructor(props){ 
-        super(props); 
-        this.state = { 
-            loading: true
-        }; 
-    }*/ 
+
     state = {loading:true}; 
 
     componentDidMount(){ 
