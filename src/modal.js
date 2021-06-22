@@ -11,12 +11,13 @@ const Modal = ({children}) => {
 
     }
 
-    useEffect((){ 
+    useEffect(() =>{ 
         const modalRoot = document.getElementById('modal'); 
         modalRoot.appendChild(elRef.current); 
 
         return () => modalRoot.removeChild(elRef.current); 
-    })
+    }, []);
+    
     return createPortal(<div>{children}</div>, elRef.current); 
 }
 
