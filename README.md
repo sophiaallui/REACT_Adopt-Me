@@ -43,3 +43,9 @@ Project is from Frontend Masters: Completed Intro to React, v5. The goal of taki
         });
     };
     ```
+
+3.  Hook
+
+4.  Context
+
+5.  Arrow functions for hooks and event listeners
