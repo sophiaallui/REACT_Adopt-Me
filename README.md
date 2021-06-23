@@ -12,7 +12,7 @@ Project is from Frontend Masters: Completed Intro to React, v5. The goal of taki
 
    > regeneratorRuntime is not defined
 
-   Searched through stack overflow, and found that I should install another babel plugin:
+   Searched through Stack Overflow, and found from [this post](https://stackoverflow.com/questions/53477466/react-referenceerror-regeneratorruntime-is-not-defined) that I should install another babel plugin:
 
    `npm install @babel/plugin-transform-runtime`
 
@@ -20,6 +20,8 @@ Project is from Frontend Masters: Completed Intro to React, v5. The goal of taki
 
    .babelrc > plugins:
    ` "@babel/plugin-transform-runtime"`
+
+   Additionally, I used [this GitHub issue](https://github.com/btholt/complete-intro-to-react-v5/issues/58) from the course to confirm the fix after I saw the suggestion from Stack Overflow.
 
 ## Interesting Findings:
 
